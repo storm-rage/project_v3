@@ -1,0 +1,128 @@
+.layout-container
+    width 100%
+    height 100%
+    display flex
+    .layout-nav
+        flex none
+        width 230px
+        background-color #263238
+        display flex
+        flex-direction column
+        overflow hidden
+        transition .5s
+        .logo-box
+            flex none
+            height 50px
+            font-size 20px
+            font-weight bold
+            text-align center
+            line-height 50px
+            white-space nowrap
+            color #FFFFFF
+            background-color #fff
+            border-right 1px solid #ddd
+            img
+                width 100%
+                height auto
+                position relative
+                bottom 20px
+                right 10px
+        .nav-box
+            flex 1
+            width 100%
+            padding-right 20px
+            overflow hidden
+            overflow-y auto
+            .el-menu
+                border none
+                width 230px
+    .layout-main
+        flex 1
+        width calc(100% - 230px)
+        display flex
+        flex-direction column
+        .head-box
+            flex none
+            height 50px
+            box-shadow 0 0 2px 0 rgba(0 0 0, 0.4)
+            .head-nav-control
+                float left
+                line-height 50px
+                font-size 24px
+                color #303133
+                padding 0px 20px
+                cursor pointer
+            .head-nav-control:hover
+                color #5baafb
+            .head-user-control
+                float right
+                .control-span
+                    line-height 50px
+                    font-size 14px
+                    color #606266
+                    padding 0px 30px
+                    cursor pointer
+        .page-box
+            flex 1
+            position relative
+            .el-tabs
+                width 100%
+                height 100%
+                .el-tabs__header
+                    flex none
+                    height 40px
+                    padding 0px 55px 0px 15px
+                    margin 0px
+                .el-tabs__header:after
+                    content ""
+                    position absolute
+                    left 0
+                    bottom 0
+                    width 100%
+                    height 2px
+                    background-color #E4E7ED
+                    z-index 1
+                .el-tabs__content
+                    width 100%
+                    background-color #f1f4f5
+                    height calc(100% - 40px)
+            .router-box
+                position absolute
+                top 40px
+                bottom 0px
+                left 0px
+                right 0px
+                margin 20px
+                padding 20px
+                border-radius 4px
+                background-color #FFFFFF
+                box-shadow 0 2px 12px 0 rgba(0, 0, 0, 0.1)
+            .tab-control
+                position absolute
+                top 0px
+                right 0px
+                line-height 40px
+                background-color #f1f4f5
+                .icon-box
+                    line-height 40px
+                    padding 0px 15px
+                    cursor pointer
+.nav-isCollapse
+    .layout-nav
+        width 64px
+        .nav-box
+            .el-menu
+                width 64px
+    .layout-main
+        width calc(100% - 64px)
+.el-popover
+    padding 0px !important
+    .popover-content
+        padding 10px 0px
+        .content-item
+            padding 0px 20px
+            line-height 34px
+            cursor pointer
+        .content-item:hover
+            background-color #e6f2ff
+            color #5baafb

@@ -1,0 +1,57 @@
+.map-servce-container
+  width 100%
+  height 100%
+  display flex
+  flex-direction column
+  .map-search-box
+    flex none
+    .el-input
+      width 30%
+      margin-right 20px
+    .el-radio-group
+      margin-right 20px
+  .map-main-box
+    flex 1
+    margin 10px 0px
+    background-color #f1f4f5
+    border-radius 4px
+    position relative
+    .map-box
+      position absolute
+      top 0px
+      bottom 0px
+      left 0px
+      right 0px
+    .place-box
+      position absolute
+      top 0px
+      left 0px
+      width 420px
+      background rgba(0,0,0,0.6)
+      color #FFFFFF
+      z-index 99999
+      .place-title
+        font-size 16px
+        padding 10px
+      .place-main
+        max-height 530px
+        font-size 14px
+        overflow hidden
+        overflow-y auto
+        padding 10px
+        .place-item
+          padding 4px 0px
+          cursor pointer
+          display flex
+          .item-index
+            flex none
+          .item-content
+            flex 1
+        .place-item:hover
+          background-color rgba(255,255,255,0.3)
+        .item-active
+          color #00fff3
+          background-color rgba(255,255,255,0.3)
+  .map-btn-box
+    flex none
+    text-align right

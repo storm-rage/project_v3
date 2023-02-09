@@ -1,0 +1,45 @@
+.map-screenshot-container
+  width 100%
+  height 100%
+  display flex
+  flex-direction column
+  position relative
+  .screenshot-head
+    flex none 
+    position relative
+    .head-text
+      line-height 24px
+      font-size 18px
+      color #303133
+    .radio-box
+      position absolute
+      top 0px
+      right 0px
+      font-size 18px
+      .el-radio-group
+        margin-left 40px
+  .screenshot-main 
+    flex 1
+    margin 20px 0px
+    border 1px solid #f00
+    .amap-logo,.amap-copyright,.anchorBL,.tdt-control
+      display none !important
+  .screenshot-btn
+    flex none
+    text-align right
+    .tips
+      position absolute
+      bottom 0px
+      left 20px
+      z-index 1
+      color #ff0000
+      font-size 16px
+      line-height 40px
+    .screenshot-input
+      position absolute
+      top 50%
+      left -20px
+      z-index 2
+      width 10px
+      height 40px
+      opacity 0
